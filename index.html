@@ -1,121 +1,102 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f2298a">
-  <meta name="description" content="Convite interativo de aniversário de 7 anos da Elis">
-  <meta property="og:title" content="Elis 7 anos 💖">
-  <meta property="og:description" content="Você está convidado para comemorar comigo! 28/11 às 16h.">
-  <title>Elis 7 anos 💖</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f2298a">
+<title>Elis 7 anos 💖</title>
+<meta name="description" content="Convite de aniversário da Elis - 7 anos">
+
+<!-- Prévia ao compartilhar no WhatsApp / redes -->
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Aniversário da Elis">
+<meta property="og:title" content="Elis 7 anos 💖 Você está convidado!">
+<meta property="og:description" content="28 de novembro, às 16h • Toque para abrir o convite 🎉">
+<meta property="og:url" content="https://rosemeire03.github.io/elis7anos/">
+<meta property="og:image" content="https://rosemeire03.github.io/elis7anos/og-elis.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Convite de aniversário de 7 anos da Elis">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="hero" id="topo">
-    <nav class="topbar">
-      <a href="#local" class="nav-link">📍 Localização</a>
-      <a href="#confirmacao" class="nav-link">💌 Confirmar presença</a>
-    </nav>
+<body class="locked">
 
-    <div class="cover-wrapper">
-      <img src="capa-elis-aprovada.png" alt="Capa do convite da Elis de 7 anos" class="cover-image">
-    </div>
+<section id="envelope" class="envelope">
+  <div class="cover-panel">
+    <img src="capa-elis.png" alt="Capa do convite da Elis">
+    <button id="openInvite" class="open-seal" aria-label="Abrir convite">
+      <span class="seal-small">CLIQUE AQUI</span>
+      <span class="seal-circle">7</span>
+      <span class="seal-small">PARA ABRIR</span>
+    </button>
+  </div>
+</section>
 
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="#confirmacao">🎉 Oba, eu vou!</a>
-      <a class="btn btn-secondary" href="#local">📍 Como chegar</a>
+<div id="invite" class="invite" aria-hidden="true">
+  <header class="inside-hero">
+    <div class="paint paint1"></div>
+    <div class="paint paint2"></div>
+    <div class="inside-copy">
+      <span class="mini">ELIS</span>
+      <h1>7 ANOS</h1>
+      <p>Uma tarde muito especial está chegando! 💕</p>
     </div>
   </header>
 
   <main>
-    <section class="section intro">
-      <div class="section-inner card">
-        <span class="eyebrow">Meu aniversário está chegando! 💕</span>
-        <p>
-          Mamãe e papai estão preparando uma comemoração muito especial para os meus 7 anos,
-          e eu quero muito passar essa tarde com meus amiguinhos e amiguinhas! 🎂✨
-        </p>
-        <p class="highlight">
-          Vou ficar muito feliz se você vier comemorar comigo! 💖
-        </p>
-        <p class="signature">Espero você!<br><strong>Com carinho, Elis 💖</strong></p>
+    <section class="section">
+      <div class="card intro">
+        <div class="emoji-row">💖 🎵 ⭐ ⚽ ✨</div>
+        <h2>Meu aniversário está chegando!</h2>
+        <p>Mamãe e papai estão preparando uma comemoração muito especial para os meus 7 anos, e eu quero muito passar essa tarde com meus amiguinhos e amiguinhas! 🎂✨</p>
+        <p class="strong">Vou ficar muito feliz se você vier comemorar comigo! 💖</p>
+        <p class="signature">Espero você!<br><b>Com carinho, Elis 💖</b></p>
       </div>
     </section>
 
-    <section class="section details">
-      <div class="section-inner">
+    <section class="section soft" id="local">
+      <div class="section-wrap">
         <h2>Quando e onde?</h2>
-        <div class="detail-grid">
-          <article class="detail-card">
-            <div class="detail-icon">📅</div>
-            <div>
-              <span>Data</span>
-              <strong>28 de novembro</strong>
-            </div>
-          </article>
-
-          <article class="detail-card">
-            <div class="detail-icon">🕓</div>
-            <div>
-              <span>Horário</span>
-              <strong>16h</strong>
-            </div>
-          </article>
-
-          <article class="detail-card full" id="local">
-            <div class="detail-icon">📍</div>
-            <div>
-              <span>Local</span>
-              <strong>R. dos Ingazeiros, 152 – Pinheirinho</strong>
-              <small>São Bernardo do Campo – SP • CEP 09854-660</small>
-            </div>
-          </article>
+        <div class="info-grid">
+          <div class="info"><span>📅</span><div><small>Data</small><b>28 de novembro</b></div></div>
+          <div class="info"><span>🕓</span><div><small>Horário</small><b>16h</b></div></div>
+          <div class="info full"><span>📍</span><div><small>Local</small><b>R. dos Ingazeiros, 152 – Pinheirinho</b><em>São Bernardo do Campo – SP • CEP 09854-660</em></div></div>
         </div>
-
-        <a class="btn btn-secondary map-btn" href="https://www.google.com/maps/search/?api=1&query=R.%20dos%20Ingazeiros%2C%20152%20-%20Pinheirinho%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009854-660" target="_blank" rel="noopener">
-          📍 Como chegar
-        </a>
+        <a class="action turquoise" href="https://www.google.com/maps/search/?api=1&query=R.%20dos%20Ingazeiros%2C%20152%20-%20Pinheirinho%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009854-660" target="_blank" rel="noopener">📍 Como chegar</a>
       </div>
     </section>
 
-    <section class="section parents-note">
-      <div class="section-inner note-card">
-        <div class="note-icon">💞</div>
-        <p>
-          Os papais e mamães que se sentirem à vontade podem deixar os pequenos
-          aproveitando a festa com a gente e buscá-los depois.
-        </p>
+    <section class="section">
+      <div class="parents-card">
+        <span>💞</span>
+        <p>Os papais e mamães que se sentirem à vontade podem deixar os pequenos aproveitando a festa com a gente e buscá-los depois.</p>
       </div>
     </section>
 
     <section class="section confirm" id="confirmacao">
-      <div class="section-inner confirm-card">
-        <span class="eyebrow">Você vem comemorar comigo? 💕</span>
-        <h2>Confirme sua presença</h2>
-        <p>
-          Sua presença vai deixar esse dia ainda mais especial.
-          Confirme para mamãe e papai prepararem tudo com muito carinho.
-        </p>
-
-        <a class="btn btn-whatsapp" href="https://wa.me/5511956806791?text=Ol%C3%A1%21%20Estou%20confirmando%20minha%20presen%C3%A7a%20no%20anivers%C3%A1rio%20de%207%20anos%20da%20Elis%2C%20dia%2028/11%20%C3%A0s%2016h.%20%F0%9F%92%95%F0%9F%8E%89" target="_blank" rel="noopener">
-          🎉 Oba, eu vou!
-        </a>
-
-        <p class="whatsapp-hint">
-          O botão abre uma mensagem pronta no WhatsApp para <strong>(11) 95680-6791</strong>.
-        </p>
+      <div class="card confirm-card">
+        <div class="emoji-row">🎉 💕 🎈</div>
+        <h2>Você vem comemorar comigo?</h2>
+        <p>Sua presença vai deixar esse dia ainda mais especial.</p>
+        <p>Confirme para mamãe e papai prepararem tudo com muito carinho.</p>
+        <a class="action whatsapp" href="https://wa.me/5511956806791?text=Ol%C3%A1%21%20Estou%20confirmando%20minha%20presen%C3%A7a%20no%20anivers%C3%A1rio%20de%207%20anos%20da%20Elis%2C%20dia%2028/11%20%C3%A0s%2016h.%20%F0%9F%92%95%F0%9F%8E%89" target="_blank" rel="noopener">🎉 Oba, eu vou!</a>
+        <small class="wa-note">Confirmação pelo WhatsApp: (11) 95680-6791</small>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="footer-mark">ELIS • 7 ANOS</div>
-    <p>Uma tarde de alegria, amizade e muitas lembranças felizes ✨</p>
+    <b>ELIS • 7 ANOS</b>
+    <span>Uma tarde de alegria, amizade e lembranças felizes ✨</span>
   </footer>
+</div>
 
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
