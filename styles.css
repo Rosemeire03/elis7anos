@@ -33,7 +33,11 @@ h1, h2, .mini, .seal-circle { font-family: "Baloo 2", "Nunito", sans-serif; }
   z-index: 50;
   display: grid;
   place-items: center;
-  background: var(--cream);
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 198, 31, .55) 0 90px, transparent 91px),
+    radial-gradient(circle at 88% 78%, rgba(25, 191, 211, .55) 0 120px, transparent 121px),
+    radial-gradient(circle at 80% 12%, rgba(255, 255, 255, .18) 0 60px, transparent 61px),
+    linear-gradient(135deg, #f2298a 0%, #b0309f 50%, #6a2fc0 100%);
   transition: opacity .8s ease, transform .9s cubic-bezier(.7, 0, .3, 1), visibility 0s linear .9s;
 }
 
@@ -49,6 +53,7 @@ h1, h2, .mini, .seal-circle { font-family: "Baloo 2", "Nunito", sans-serif; }
   height: 100dvh;
   width: min(100vw, calc(100dvh * 941 / 1672));
   aspect-ratio: 941 / 1672;
+  box-shadow: 0 0 70px rgba(40, 10, 80, .45);
 }
 
 .cover-panel img {
